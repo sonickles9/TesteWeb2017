@@ -1,0 +1,152 @@
+
+* {
+margin: 0;
+padding: 0;
+}
+
+/* cabeçalho */
+#header_row {
+background-color: #ccccff;
+height: 40px;
+min-width: 240px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+#header_row a{
+text-decoration: none;
+}
+
+/* estilos genéricos para os botões do cabeçalho */
+.header-btn {
+color: #FFFFFF;
+font-size: 32px;
+margin-top: 4px;
+margin-left: 4px;
+}
+
+.header-btn:active {
+background-color: #9999bb;
+}
+
+/* botão de menu */
+#header_menu-btn-container {
+height: 40px;
+max-width: 160px;
+min-width: 48px;
+padding-top: 4px;
+}
+#header_menu-btn-container:active {
+background-color: #9999bb;
+}
+
+/* botão de busca */
+#header_search-btn-container {
+height: 40px;
+max-width: 240px;
+min-width: 48px;
+padding-top: 4px;
+}
+
+#header_search-btn-container * {
+		margin-left: -2px;
+	}
+
+#header_search-btn-container:active {
+background-color: #9999bb;
+}
+
+/* texto do cabeçalho */
+.header-text {
+color: #FFFFFF;
+font-family: Arial, sans-serif;
+font-size: 16pt;
+left: 56px;
+top: 15%;
+height: 40px;
+position: absolute;
+}
+
+/* estilos do menu */
+#menu-list a{
+text-decoration: none;
+}
+
+#menu-list {
+	min-width: 240px;
+	margin-left: 10px;
+	position: absolute;
+}
+
+#menu-list * {
+	border-radius: 0;
+}
+
+#footer_row {
+background-color: #333311;
+height: 40px;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+/* container */
+#container {
+	padding-left: 23px;
+	padding-right: 23px;
+	float: right;
+}
+
+
+/* alguns overrides para classes do Bootstrap */
+.list-group-item { 
+width: 100%;
+margin: 0;
+background-color: #dddddd;
+}
+
+.list-group {
+	padding: 0;
+}
+
+.btn-success {
+	padding: 5px;
+}
+
+/* media queries */
+@media only screen and (max-width: 768px) {
+	#header_menu-btn-container .header-text {
+		display: none;
+	}
+	
+	#header_menu-btn-container{
+		width: 48px;
+		padding-left: 6px;
+	}
+	
+	#header_search-btn-container {
+		width: 25%;
+	}
+	#menu-list {
+		display: none;
+	}
+}
+@media only screen and (max-width: 600px) {
+	#header_search-btn-container .header-text {
+		display: none;
+	}
+	
+	#header_search-btn-container {
+		width: 48px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.header-text {
+		display: none;
+	}
+	
+	.header_row-center {
+		text-align: center;
+		width: 60%;
+	}
+}
